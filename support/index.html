@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — Gridsmith</title>
+    <style>
+        :root {
+            --bg: #f8f8fc;
+            --surface: #ffffff;
+            --text: #1a1a2e;
+            --text-secondary: #6b6b80;
+            --accent: #5851e0;
+            --accent-light: #eeedfc;
+            --border: #e8e8f0;
+            --radius: 16px;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0e0e1a;
+                --surface: #1a1a2e;
+                --text: #eeeef4;
+                --text-secondary: #9898ab;
+                --accent: #8080f0;
+                --accent-light: #1e1e3a;
+                --border: #2a2a40;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        nav {
+            text-align: center;
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin: 0 16px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        nav a:hover { color: var(--accent); }
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 12px;
+        }
+        p { margin-bottom: 16px; font-size: 0.95rem; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .contact-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 32px;
+            margin: 32px 0;
+            text-align: center;
+        }
+        .contact-card .icon { font-size: 40px; margin-bottom: 12px; }
+        .contact-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .contact-card a {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .faq-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .faq-item h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .faq-item p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/gridsmith-pages/">Gridsmith</a>
+        <a href="/gridsmith-pages/privacy">Privacy</a>
+        <a href="/gridsmith-pages/support">Support</a>
+    </nav>
+
+    <div class="container">
+        <h1>Support</h1>
+
+        <div class="contact-card">
+            <div class="icon">✉️</div>
+            <h3>Get in Touch</h3>
+            <p>Have a question, bug report, or suggestion?</p>
+            <p style="margin-top: 12px;">
+                <a href="mailto:support@springdata.uk?subject=Gridsmith%20Support">support@springdata.uk</a>
+            </p>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px;">
+                We typically respond within 48 hours.
+            </p>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3>How do hex nonogram clues work?</h3>
+            <p>A standard nonogram has two axes of clues (rows and columns). In Gridsmith, the hexagonal grid creates three axes. Each line on each axis has a clue showing the run lengths of consecutive filled cells, just like a regular nonogram. Use all three axes together to deduce the solution — no guessing is ever required.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I fill and mark cells?</h3>
+            <p><strong>Tap</strong> a cell to cycle through states: empty → filled (indigo) → marked (X) → empty. <strong>Long-press</strong> a cell to quickly toggle between empty and marked, skipping the filled state — useful when you know a cell should be empty.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What do the green clue numbers mean?</h3>
+            <p>When a line's clue turns green, it means the filled cells in that line exactly match the expected clue pattern and the line is complete. This helps you track which lines are solved and which still need work.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I get a hint?</h3>
+            <p>Yes — tap the <strong>Hint</strong> button (lightbulb icon) at the bottom of the game screen. It will correctly fill one cell that should be part of the solution. Hints are free and unlimited.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I restore my purchases?</h3>
+            <p>Go to <strong>Settings → Restore Purchases</strong>. This will re-activate any puzzle packs or themes you've previously purchased on the same Apple ID.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>My progress was lost. What happened?</h3>
+            <p>Gridsmith saves progress locally on your device. If you uninstall and reinstall the app, or use the "Reset All Progress" option in Settings, your progress will be erased. Currently, Gridsmith does not sync progress across devices. We recommend keeping regular device backups via iCloud or iTunes.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Does Gridsmith work offline?</h3>
+            <p>Yes, completely. Gridsmith requires no internet connection to play. All puzzles are generated and stored locally on your device.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Does Gridsmith collect any data?</h3>
+            <p>No. Gridsmith collects no personal data, uses no analytics, and contains no ads or tracking. See our <a href="/gridsmith-pages/privacy">Privacy Policy</a> for full details.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>I found a bug or have a feature request.</h3>
+            <p>Please email <a href="mailto:support@springdata.uk?subject=Gridsmith%20Bug%20Report">support@springdata.uk</a> with a description of what happened, your device model, and iOS version. Screenshots are always helpful. We read every email and prioritise fixes based on player impact.</p>
+        </div>
+
+        <h2>App Information</h2>
+        <p>
+            <strong>Developer:</strong> Spring Data Limited<br>
+            <strong>Version:</strong> 1.0.0<br>
+            <strong>Compatibility:</strong> iOS 17.0 or later (iPhone and iPad)<br>
+            <strong>Price:</strong> $2.99 (paid upfront, no subscriptions)<br>
+            <strong>In-App Purchases:</strong> Optional puzzle packs ($1.99 each) and visual themes ($0.99 each)
+        </p>
+    </div>
+
+    <footer>
+        <p>© 2026 Spring Data Limited. All rights reserved.</p>
+        <p style="margin-top: 8px;">
+            <a href="/gridsmith-pages/">Home</a> · 
+            <a href="/gridsmith-pages/privacy">Privacy Policy</a>
+        </p>
+    </footer>
+</body>
+</html>

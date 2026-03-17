@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridsmith — Hex Nonogram Puzzles</title>
+    <style>
+        :root {
+            --bg: #f8f8fc;
+            --surface: #ffffff;
+            --text: #1a1a2e;
+            --text-secondary: #6b6b80;
+            --accent: #5851e0;
+            --accent-light: #eeedfc;
+            --border: #e8e8f0;
+            --radius: 16px;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0e0e1a;
+                --surface: #1a1a2e;
+                --text: #eeeef4;
+                --text-secondary: #9898ab;
+                --accent: #8080f0;
+                --accent-light: #1e1e3a;
+                --border: #2a2a40;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 24px 60px;
+        }
+        .hero-icon {
+            font-size: 80px;
+            margin-bottom: 16px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 8px;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            max-width: 480px;
+            margin: 0 auto 32px;
+        }
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 40px 0;
+        }
+        @media (max-width: 560px) {
+            .features { grid-template-columns: 1fr; }
+        }
+        .feature-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+        }
+        .feature-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .feature-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        nav {
+            text-align: center;
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin: 0 16px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        nav a:hover { color: var(--accent); }
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 60px;
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Gridsmith</a>
+        <a href="/gridsmith-pages/privacy">Privacy</a>
+        <a href="/gridsmith-pages/support">Support</a>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-icon">⬡</div>
+        <span class="badge">Premium · No Ads</span>
+        <h1>Gridsmith</h1>
+        <p>Nonogram puzzles reimagined on hexagonal grids. Three axes of clues, fresh geometry, pure logic.</p>
+    </div>
+
+    <div class="container">
+        <div class="features">
+            <div class="feature-card">
+                <h3>⬡ Hex Grids</h3>
+                <p>Hexagonal cells create three clue axes instead of two — a genuinely new solving experience.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🧩 70+ Puzzles</h3>
+                <p>Easy, Medium, and Hard tiers from radius 2 (7 cells) to radius 5 (91 cells).</p>
+            </div>
+            <div class="feature-card">
+                <h3>🚫 No Ads Ever</h3>
+                <p>No interstitials. No banners. No energy systems. No subscriptions. Just puzzles.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌙 Dark Mode</h3>
+                <p>Beautiful on every iPhone and iPad, in light or dark mode. Adaptive layouts everywhere.</p>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin: 48px 0;">
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                Available on the App Store for $2.99.
+                <br>Optional puzzle packs and themes available as in-app purchases.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Spring Data Limited. All rights reserved.</p>
+        <p style="margin-top: 8px;">
+            <a href="/gridsmith-pages/privacy">Privacy Policy</a> · 
+            <a href="/gridsmith-pages/support">Support</a>
+        </p>
+    </footer>
+</body>
+</html>
