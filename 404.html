@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting — Gridsmith</title>
+    <meta http-equiv="refresh" content="0; url=/gridsmith-pages/">
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+            background: #f8f8fc;
+            color: #1a1a2e;
+            display: grid;
+            min-height: 100vh;
+            place-items: center;
+            padding: 24px;
+        }
+        .card {
+            max-width: 520px;
+            text-align: center;
+            background: #ffffff;
+            border: 1px solid #e8e8f0;
+            border-radius: 20px;
+            padding: 28px 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        }
+        a {
+            color: #5851e0;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+    <script>
+        const redirects = {
+            "/gridsmith-pages/privacy": "/gridsmith-pages/privacy/",
+            "/gridsmith-pages/support": "/gridsmith-pages/support/",
+            "/gridsmith-pages": "/gridsmith-pages/"
+        };
+
+        const target = redirects[window.location.pathname] || "/gridsmith-pages/";
+        window.location.replace(target);
+    </script>
+</head>
+<body>
+    <div class="card">
+        <h1>Redirecting…</h1>
+        <p>
+            Taking you to the right Gridsmith page.
+            If nothing happens, <a href="/gridsmith-pages/">go to the home page</a>.
+        </p>
+    </div>
+</body>
+</html>
